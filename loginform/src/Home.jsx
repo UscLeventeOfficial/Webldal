@@ -1,14 +1,20 @@
 import "./App.css";
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 const HomePage = () => {
   return (
     <div className="min-h-screen bg-indigo-700 flex flex-col">
       <div className="navbar bg-base-100">
-        <div className="flex-1 ">
-          <a href="/home" className="btn btn-ghost text-3xl">
+        <div className="flex-1">
+          <a href="/" className="btn btn-ghost text-3xl  font-bold">
             UscLevente
           </a>
+          <div className="ml-6 flex gap-6">
+          <button className="font-bold btn btn-ghost text-2xl"><Link to="/login">Log in</Link></button>
+          <button className="font-bold btn btn-ghost text-2xl"><Link to="/signup">Sign up</Link></button>
+          </div>
         </div>
         <div className="dropdown dropdown-end">
           <div
@@ -19,7 +25,7 @@ const HomePage = () => {
             <div className="w-16 rounded-full">
               <img
                 alt="Tailwind CSS Navbar component"
-                src="https://yt3.ggpht.com/3EyMlZgovI8Qio6ySokEJW33fqINJGuZJs3jcoaQtQwxu6cJJM9tIFBV3C4hVZR3dEtzbla5LY4=s176-c-k-c0x00ffffff-no-rj-mo"
+                src="https://yt3.googleusercontent.com/3EyMlZgovI8Qio6ySokEJW33fqINJGuZJs3jcoaQtQwxu6cJJM9tIFBV3C4hVZR3dEtzbla5LY4=s160-c-k-c0x00ffffff-no-rj"
               />
             </div>
           </div>
