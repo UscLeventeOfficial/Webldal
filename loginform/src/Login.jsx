@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./App.css";
 import React from "react";
 
@@ -47,12 +48,13 @@ const SigninPage = () => {
           </button>
           <p className="mt-4">
             Don't have an account?{" "}
-            <a
-              href="/signup"
+            <Link
+              to="/signup"
               className="text-purple-600 font-bold hover:underline"
             >
+              {" "}
               Sign up here!
-            </a>
+            </Link>
           </p>
         </form>
       </div>

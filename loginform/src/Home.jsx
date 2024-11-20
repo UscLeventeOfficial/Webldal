@@ -3,7 +3,7 @@ import React from "react";
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-indigo-700">
+    <div className="min-h-screen bg-indigo-700 flex flex-col">
       <div className="navbar bg-base-100">
         <div className="flex-1 ">
           <a href="/home" className="btn btn-ghost text-3xl">
@@ -35,20 +35,36 @@ const HomePage = () => {
               />
             </div>
           </div>
-          <ul
-            tabIndex="0"
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-          >
-            <li>
-              <a className="justify-between">Profile</a>
-            </li>
-            <li>
-              <a>Settings</a>
-            </li>
-            <li>
-              <a>Logout</a>
-            </li>
-          </ul>
+        </div>
+      </div>
+      <div className="flex items-center justify-center flex-grow">
+        <div
+          id="box"
+          className="relative bg-white p-8 m-8 w-[950px] h-auto rounded-lg shadow-lg text-center inner-outline"
+        >
+          <div className="flex space-x-4 items-start h-full">
+            <div id="szoveg" className="text-left w-1/2">
+              kajysuiasi
+              <br />
+              sjahj
+              <br />
+              kjashcaghsuaj
+              <br />
+              kjashcaghsuaj
+            </div>
+            <div id="video" className="w-1/2 relative">
+              <div className="relative pb-[56.25%] w-full">
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full"
+                  src="https://www.youtube.com/embed/yvpyf76eNHk?si=xYgCOapatMxnpWhE"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
