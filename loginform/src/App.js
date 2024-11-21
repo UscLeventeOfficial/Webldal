@@ -4,6 +4,7 @@ import SignUp from "./SignUp";
 import SignIn from "./Login";
 import Home from "./Home";
 import PasswordReset from "./PasswordReset";
+import LinkSent from "./LinkSent";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<SignIn />} />
         <Route path="/resetpassword" element={<PasswordReset />} />
+        <Route path="/linksent" element={<LinkSent />} />
       </Routes>
     </Router>
   );
