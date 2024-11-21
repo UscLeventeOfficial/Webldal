@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-const Text = ({ link, text, text2, design }) => {
+
+const ForgotPassword = ({ link, text }) => {
   return (
-    <p className={`mt-4  ${design}`}>
-      {text}{" "}
+    <p className="mt-4 mb-4 ml-0.5 flex">
       <Link to={link} className="text-purple-600 font-bold hover:underline">
-        {text2}
+        {text}
       </Link>
     </p>
   );
 };
 
-export default Text;
+export default ForgotPassword;
