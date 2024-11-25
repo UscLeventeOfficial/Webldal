@@ -1,4 +1,4 @@
-const Input = ({ placeholder, type, icon: Icon, design }) => {
+const HomeVideo = ({ placeholder, type, icon: Icon, design }) => {
   return (
     <div className="flex justify-center mt-4">
       <iframe
@@ -16,4 +16,4 @@ const Input = ({ placeholder, type, icon: Icon, design }) => {
   );
 };
 
-export default Input;
+export default HomeVideo;

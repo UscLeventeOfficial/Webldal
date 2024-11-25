@@ -1,4 +1,4 @@
-const DonateHome = ({ link, text }) => {
+const DonateHome = () => {
   return (
     <a
       href="https://www.buymeacoffee.com/UscLevente"
