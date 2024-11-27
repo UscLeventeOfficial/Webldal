@@ -15,7 +15,7 @@ const HomePage = () => {
       <HomeWelcome text={"Üdvözöllek az Usc weboldalon!"} />
       <HomeVideo />
       <div className="flex justify-center mt-6">
-        <div className="bg-white p-6 rounded-lg shadow-md h-1/2 w-full sd:w-3/4 mx-3 mb-6 lg:w-1/2">
+        <div className="bg-white p-6 rounded-lg shadow-md h-1/2 w-full sd:w-3/4 mx-3 mb-5 lg:w-1/2">
           <HomeText />
           <div className="flex justify-center mt-2 gap-14">
             <YoutubeIcon link={"https://www.youtube.com/@Usc_FC"} />
