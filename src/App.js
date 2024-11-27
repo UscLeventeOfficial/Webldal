@@ -5,6 +5,8 @@ import SignIn from "./Login";
 import Home from "./Home";
 import PasswordReset from "./PasswordReset";
 import LinkSent from "./LinkSent";
+import UscFC from "./UscFC";
+import UscExtra from "./UscExtra";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/login" element={<SignIn />} />
         <Route path="/resetpassword" element={<PasswordReset />} />
         <Route path="/linksent" element={<LinkSent />} />
+        <Route path="/UscFC" element={<UscFC />} />
+        <Route path="/UscExtra" element={<UscExtra />} />
       </Routes>
     </Router>
   );

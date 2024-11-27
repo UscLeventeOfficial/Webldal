@@ -8,18 +8,20 @@ const Header = () => {
           UscLevente
         </a>
       </div>
-      <div className="flex items-center gap-6">
-        <div className=" md:flex items-center gap-6">
+      <div className="flex items-center gap-2">
+        <div className="md:flex items-center gap-2">
           <div
             tabIndex={0}
             role="button"
             className="btn btn-ghost btn-circle avatar"
           >
             <div className="w-10 md:w-16 rounded-full">
-              <img
-                alt="Tailwind CSS Navbar component"
-                src="https://yt3.ggpht.com/3EyMlZgovI8Qio6ySokEJW33fqINJGuZJs3jcoaQtQwxu6cJJM9tIFBV3C4hVZR3dEtzbla5LY4=s176-c-k-c0x00ffffff-no-rj-mo"
-              />
+              <Link to="/">
+                <img
+                  alt="Usc Extra"
+                  src="https://yt3.googleusercontent.com/3EyMlZgovI8Qio6ySokEJW33fqINJGuZJs3jcoaQtQwxu6cJJM9tIFBV3C4hVZR3dEtzbla5LY4=s160-c-k-c0x00ffffff-no-rj"
+                />
+              </Link>
             </div>
           </div>
           <div
@@ -28,14 +30,16 @@ const Header = () => {
             className="btn btn-ghost btn-circle avatar"
           >
             <div className="w-10 md:w-16 rounded-full">
-              <img
-                alt="Tailwind CSS Navbar component"
-                src="https://yt3.ggpht.com/YwSr7lrlXsmq98T_SgXt64e9GfKa2z7xr8joKdflrfKZNb9xCfwd4nxDNal05VgpSM6YC4MU=s176-c-k-c0x00ffffff-no-rj-mo"
-              />
+              <Link to="/">
+                <img
+                  alt="Usc FC"
+                  src="https://yt3.ggpht.com/YwSr7lrlXsmq98T_SgXt64e9GfKa2z7xr8joKdflrfKZNb9xCfwd4nxDNal05VgpSM6YC4MU=s176-c-k-c0x00ffffff-no-rj-mo"
+                />
+              </Link>
             </div>
           </div>
         </div>
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden md:flex items-center gap-2">
           <button className="font-bold btn btn-ghost text-xl md:text-2xl">
             <Link to="/login">Log in</Link>
           </button>
@@ -66,7 +70,7 @@ const Header = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu gap-2 menu-compact font-poppins font-semibold dropdown-content my-3 p-2 shadow bg-base-100 rounded-lg w-32"
           >
             <li>
               <Link to="/login">Log in</Link>
