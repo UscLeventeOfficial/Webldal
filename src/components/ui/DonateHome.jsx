@@ -1,4 +1,4 @@
-const DonateHome = () => {
+const DonateHome = ({ design }) => {
   return (
     <a
       href="https://www.buymeacoffee.com/UscLevente"
@@ -8,7 +8,7 @@ const DonateHome = () => {
       <img
         src="https://cdn.buymeacoffee.com/buttons/v2/arial-yellow.png"
         alt="Buy Me A Coffee"
-        className="h-8 transition duration-300 hover:shadow-lg hover:shadow-yellow-500"
+        className={`h-8 transition duration-300 hover:shadow-lg hover:shadow-yellow-500 ${design}`}
       />
     </a>
   );

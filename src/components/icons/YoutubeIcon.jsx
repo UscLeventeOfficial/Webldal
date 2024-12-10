@@ -1,7 +1,7 @@
-const YoutubeIcon = ({ link }) => {
+const YoutubeIcon = ({ link, design }) => {
   return (
     <a
-      className="text-gray-700 hover:text-red-600 cursor-pointer"
+      className={`text-gray-700 hover:text-red-600 cursor-pointer ${design}`}
       aria-label="Visit TrendyMinds YouTube"
       href={link}
       target="_blank"

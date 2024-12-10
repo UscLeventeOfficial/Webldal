@@ -4,14 +4,17 @@ import HomeWelcome from "./HomeWelcome";
 import NewHeader from "./NewHeader";
 import channels from "../../Csatornak";
 import PrevButton from "./PrevButton";
+import YoutubeIcon from "../icons/YoutubeIcon";
 
 const NewHome = () => {
   const UscFCText = channels[0].text;
   const UscExtraText = channels[1].text;
-  const [text, setText] = useState(0);
+
   const UscFCLogo = channels[0].logo;
   const UscExtraLogo = channels[1].logo;
-  const [logo, setLogo] = useState(0);
+  const [channel, setChannel] = useState(0);
+  const UscFCLink = "https://www.youtube.com/@Usc_FC";
+  const UscExtraLink = "https://www.youtube.com/@Usc_official";
 
   return (
     <div
@@ -26,25 +29,26 @@ const NewHome = () => {
             <img
               alt="logo"
               className="w-24 rounded-full"
-              src={logo === 0 ? UscFCLogo : UscExtraLogo}
+              src={channel === 0 ? UscFCLogo : UscExtraLogo}
             ></img>
             <pre className="mb-4 mt-4 font-semibold break-words whitespace-pre-wrap w-full text-base font-poppins text-gray-800 flex justify-center">
-              {text === 0 ? UscFCText : UscExtraText}
+              {channel === 0 ? UscFCText : UscExtraText}
             </pre>
+
             <div className="flex gap-2">
               <PrevButton
                 onClick={() => {
-                  setText(text + 1);
-                  if (text >= 1) {
-                    setText(0);
-                  }
-                  setLogo(logo + 1);
-                  if (logo >= 1) {
-                    setLogo(0);
+                  setChannel(channel + 1);
+                  if (channel >= 1) {
+                    setChannel(0);
                   }
                 }}
               />
             </div>
+            <YoutubeIcon
+              design={"mt-4"}
+              link={channel === 0 ? UscFCLink : UscExtraLink}
+            />
           </div>
         </div>
       </div>
