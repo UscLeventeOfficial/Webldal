@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import Channels from "../../Csatornak";
 
 const Header = () => {
+  const UscFCLogo = Channels[0].logo;
+  const UscExtraLogo = Channels[1].logo;
   return (
     <div className="navbar bg-base-100 px-4 md:px-8">
       <div className="flex-1">
@@ -17,10 +20,7 @@ const Header = () => {
           >
             <div className="w-10 md:w-16 rounded-full">
               <Link to="/">
-                <img
-                  alt="Usc Extra"
-                  src="https://yt3.googleusercontent.com/3EyMlZgovI8Qio6ySokEJW33fqINJGuZJs3jcoaQtQwxu6cJJM9tIFBV3C4hVZR3dEtzbla5LY4=s160-c-k-c0x00ffffff-no-rj"
-                />
+                <img alt="Usc Extra" src={UscExtraLogo} />
               </Link>
             </div>
           </div>
@@ -31,10 +31,7 @@ const Header = () => {
           >
             <div className="w-10 md:w-16 rounded-full">
               <Link to="/">
-                <img
-                  alt="Usc FC"
-                  src="https://yt3.ggpht.com/YwSr7lrlXsmq98T_SgXt64e9GfKa2z7xr8joKdflrfKZNb9xCfwd4nxDNal05VgpSM6YC4MU=s176-c-k-c0x00ffffff-no-rj-mo"
-                />
+                <img alt="Usc FC" src={UscFCLogo} />
               </Link>
             </div>
           </div>

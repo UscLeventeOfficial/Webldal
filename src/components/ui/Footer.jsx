@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer class="footer footer-center bg-primary text-primary-content p-5">
+    <footer class="footer footer-center bg-primary text-primary-content p-5 mt-5">
       <aside>
         <img
           src="https://yt3.googleusercontent.com/YwSr7lrlXsmq98T_SgXt64e9GfKa2z7xr8joKdflrfKZNb9xCfwd4nxDNal05VgpSM6YC4MU=s160-c-k-c0x00ffffff-no-rj"
