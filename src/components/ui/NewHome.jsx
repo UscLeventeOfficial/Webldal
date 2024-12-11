@@ -4,7 +4,6 @@ import HomeWelcome from "./HomeWelcome";
 import NewHeader from "./NewHeader";
 import channels from "../../Csatornak";
 import PrevButton from "./PrevButton";
-import YoutubeIcon from "../icons/YoutubeIcon";
 
 const NewHome = () => {
   const UscFCText = channels[0].text;
@@ -22,7 +21,11 @@ const NewHome = () => {
         <HomeWelcome text={"Üdvözöllek az Usc Weboldalon!"} />
         <div className="flex justify-center mt-6">
           <div className="bg-white p-8 rounded-2xl shadow-2xl mx-3 w-full sm:w-full md:w-2/3 lg:w-1/2 flex flex-col items-center transition-all duration-500 md:hover:scale-[1.02]">
-            <a href={channel === 0 ? FCLink : ExtraLink} target="_blank">
+            <a
+              href={channel === 0 ? FCLink : ExtraLink}
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 alt="logo"
                 className={`w-28 rounded-full shadow-xl border border-4 transition-transform duration-500 ease-in-out ${
