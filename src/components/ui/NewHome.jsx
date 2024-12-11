@@ -4,6 +4,7 @@ import HomeWelcome from "./HomeWelcome";
 import NewHeader from "./NewHeader";
 import channels from "../../Csatornak";
 import PrevButton from "./PrevButton";
+import YoutubeIcon from "../icons/YoutubeIcon";
 
 const NewHome = () => {
   const UscFCText = channels[0].text;
@@ -15,29 +16,23 @@ const NewHome = () => {
   const [channel, setChannel] = useState(0);
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-indigo-600 to-indigo-800 text-white">
+    <div className="min-h-screen flex flex-col bg-indigo-600 groundPosition: 'center'">
       <NewHeader />
-      <div className="flex-grow flex flex-col items-center justify-center">
+      <div className="flex-grow justify-end">
         <HomeWelcome text={"Üdvözöllek az Usc Weboldalon!"} />
         <div className="flex justify-center mt-6">
-          <div className="bg-white p-8 rounded-2xl shadow-2xl mx-3 w-full sm:w-full md:w-2/3 lg:w-1/2 flex flex-col items-center transition-transform transform hover:scale-105 hover:duration-1000">
-            <a
-              href={channel === 0 ? FCLink : ExtraLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative"
-            >
+          <div className="bg-white p-8 rounded-2xl shadow-2xl mx-3 w-full sm:w-full md:w-2/3 lg:w-1/2 flex flex-col items-center transition-all duration-500 md:hover:scale-[1.02]">
+            <a href={channel === 0 ? FCLink : ExtraLink} target="_blank">
               <img
                 alt="logo"
-                className={`w-28 h-28 rounded-full shadow-lg border-4 transition-transform duration-300 ease-in-out ${
+                className={`w-28 rounded-full shadow-xl border border-4 transition-transform duration-500 ease-in-out ${
                   channel === 0 ? "border-red-600" : "border-indigo-600"
-                } group-hover:scale-110`}
+                } md:hover:scale-110`}
                 src={channel === 0 ? UscFCLogo : UscExtraLogo}
               />
-              <div className="absolute inset-0 rounded-full bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </a>
-            <div className="bg-gray-100 p-4 rounded-xl w-full mt-6 mb-6 shadow-inner transition-transform transform hover:scale-105 duration-500">
-              <pre className="font-poppins font-medium break-words whitespace-pre-wrap text-center text-lg text-gray-700 transition-transform">
+            <div className="bg-gray-100 p-4 rounded-xl w-full mt-4 mb-6 transition-all duration-500 ease-in-out md:hover:scale-[1.02]">
+              <pre className="font-poppins font-medium break-words whitespace-pre-wrap text-center text-lg text-gray-700">
                 {channel === 0 ? UscFCText : UscExtraText}
               </pre>
             </div>
